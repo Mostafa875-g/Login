@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Smart Login System</h2>
+            
+            <!-- Login Section -->
+            <div id="login-section" class="form-section active">
+                <form id="login-form">
+                    <div class="input-group">
+                        <input type="email" id="login-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="login-password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                <p class="link">Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+                <div id="login-message" class="message"></div>
+            </div>
+
+            <!-- Sign Up Section -->
+            <div id="signup-section" class="form-section hidden">
+                <form id="signup-form">
+                    <div class="input-group">
+                        <input type="text" id="signup-name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="signup-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="signup-password" placeholder="Enter password" required>
+                    </div>
+                    <button type="submit" class="btn">Sign Up</button>
+                </form>
+                <p class="link">Already have an account? <a href="#" id="show-login">Login</a></p>
+                <div id="signup-message" class="message"></div>
+            </div>
+
+            <!-- Home Section -->
+            <div id="home-section" class="form-section hidden">
+                <div class="home-content">
+                    <h2>Welcome, <span id="user-name"></span>!</h2>
+                    <p>You are successfully logged in.</p>
+                    <button id="logout-btn" class="btn">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
